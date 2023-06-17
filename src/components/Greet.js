@@ -7,7 +7,6 @@ import React from 'react';
 //             </div>
 //         );
 // }
-
 const Greeting = () => {
     return (
         <div>
