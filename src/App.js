@@ -1,4 +1,3 @@
-import './App.css';
 import Greeting from './components/Greet';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
@@ -11,7 +10,7 @@ import Home from './components/Home';
 function App() {
   const title = 'Welcome to the new blog';
   const likes = 50;
-  const name = prompt('What is your name ');
+  //const name = prompt('What is your name ');
 
   const person = {name: 'John', age: 40}
 
@@ -22,17 +21,18 @@ function App() {
 
       <Navbar></Navbar>
 
-      <Home></Home>
+     
       
       <div className="content">
+      <Home></Home>
         <h1>Hello World!</h1>
         <h2>{title}</h2>
         <p>The number of likes we have roght now for this application is {likes} times</p>
-        <p>Your name is {name}</p>
+        {/* <p>Your name is {name}</p> */}
         <p>This is the person you are looking for: {person.name}</p>
         <p>This is your age: {person.age}</p>
 
-        <a href={links} target="_blank">Google Search Engine</a>
+        <a href={links}>Google Search Engine</a>
 
         <Greeting></Greeting>
       </div>
