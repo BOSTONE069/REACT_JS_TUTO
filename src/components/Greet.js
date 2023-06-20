@@ -15,8 +15,10 @@ import React from 'react';
  */
 const Greeting = () => {
     return (
-        <div>
-            <h1>Hello</h1>
+        <div style={{
+            textAlign: 'center',
+        }}>
+            <h1>Hello These are the Blogs That I have Written</h1>
         </div>
     );
 }

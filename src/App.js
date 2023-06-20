@@ -1,6 +1,7 @@
 import Greeting from './components/Greet';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
+import Post from './components/Posts';
 
 /**
  * The function returns a component called "App" that renders a "Greeting" component.
@@ -35,6 +36,8 @@ function App() {
         <a href={links}>Google Search Engine</a>
 
         <Greeting></Greeting>
+
+        <Post></Post>
       </div>
     </div>
   );
