@@ -17,10 +17,10 @@ const Post = () => {
     return ( 
       <div className="posts">
         {blogs.map(blog => (
-            <div key={blog.id}>
+            <div className="blog-preview" key={blog.id}>
                 <h2>{blog.title}</h2>
                 <p>{blog.body}</p>
-                <p>{blog.author}</p>
+                <p>Written by: {blog.author}</p>
                 </div>))}
       </div>
      );
