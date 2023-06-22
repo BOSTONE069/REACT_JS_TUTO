@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import BlogList from './BlogList';
 
 const Post = () => {
 
@@ -9,19 +10,14 @@ const Post = () => {
     ]);
 
     //function for setting a new blog post
-    const blogPost = () => {
-        setBlogPost(blogPost)
-    }
+    // const blogPost = () => {
+    //     setBlogPost(blogPost)
+    // }
 
 
     return ( 
       <div className="posts">
-        {blogs.map(blog => (
-            <div className="blog-preview" key={blog.id}>
-                <h2>{blog.title}</h2>
-                <p>{blog.body}</p>
-                <p>Written by: {blog.author}</p>
-                </div>))}
+        <BlogList blogs={blogs} />
       </div>
      );
 }
