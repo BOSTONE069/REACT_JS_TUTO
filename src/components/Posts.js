@@ -3,6 +3,11 @@ import BlogList from './BlogList';
 
 const Post = () => {
 
+    /* This code is using the `useState` hook from React to create a state variable called `blogs` and
+    a function called `setBlogPost` to update the state variable. The initial value of `blogs` is an
+    array of three objects, each representing a blog post with properties such as `title`, `body`,
+    `author`, and `id`. This state variable is used to render the `BlogList` component with the
+    `blogs` prop set to the `blogs` state variable. */
     const [blogs, setBlogPost] = useState ([
         {title: 'My new website', body: 'This is  description of my blog post', author: 'John', id: 1},
         {title: 'Welcome to the part', body: 'This is  description of my blog post', author: 'Kevin', id: 2},

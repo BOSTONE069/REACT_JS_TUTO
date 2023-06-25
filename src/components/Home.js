@@ -8,10 +8,18 @@ const Home = () => {
         console.log("Hello Bostone Welcome to React JS")
     }
 
+    /**
+     * The function logs a greeting message with a given name parameter.
+     * @param name - a parameter of type string that represents the name of the person being greeted in
+     * the console log message.
+     */
     const handleClickAgain = (name) =>{
         console.log("Hello Welcome to React JS Again" +  name);
     }
 
+    /**
+     * The function changes the country to India.
+     */
     const changeCountry = () =>{
         setCountry("India");
     }
