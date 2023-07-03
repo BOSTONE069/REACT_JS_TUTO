@@ -24,6 +24,9 @@ const Home = () => {
         setCountry("India");
     }
 
+   /**
+    * The function `changeAge` sets the age to 25.
+    */
     const changeAge = () =>{
             setAge(25);
         }
